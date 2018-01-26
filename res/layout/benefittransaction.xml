@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+ 
+  <LinearLayout
+      android:id="@+id/linearLayout1"
+      android:layout_width="353dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical" >
+
+        <!-- Name Label -->
+ 
+
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Benefit" /> 
+            
+     <Spinner
+            android:id="@+id/Benefit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />    
+  
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Date" />
+
+        <EditText
+            android:id="@+id/txtDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:editable="false"
+            android:singleLine="true" />  
+            
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Claim" />
+
+        <EditText
+            android:id="@+id/txtClaim"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:editable="false"
+            android:singleLine="true" /> 
+
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Payment" /> 
+        <EditText
+            android:id="@+id/txtPayment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:editable="false"
+            android:singleLine="true" />     
+
+           <Button
+             android:id="@+id/button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Calculate" />
+        
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Recepient" /> 
+     <Spinner
+            android:id="@+id/Recepient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />       
+          
+        
+     <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Payment Type" /> 
+     <Spinner
+            android:id="@+id/PaymentType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />   
+     
+    </LinearLayout>
+  
+</ScrollView> 

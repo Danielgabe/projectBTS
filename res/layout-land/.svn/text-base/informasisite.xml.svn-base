@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/siteID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Site ID" />
+    
+    <EditText 
+        android:id="@id/siteID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Site Name" /> 
+        
+     <EditText 
+        android:id="@+id/siteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />
+    
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude" /> 
+      <EditText 
+        android:id="@id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />    
+    
+       <TextView
+        android:id="@+id/longtitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude" /> 
+        
+      <EditText 
+        android:id="@id/longtitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />  
+         
+       <TextView
+        android:id="@+id/province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Province" /> 
+        
+       <EditText 
+        android:id="@id/province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />  
+       
+       <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City" /> 
+        <EditText 
+        android:id="@id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />  
+        <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/head_default" />
+      </LinearLayout> 
+       
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical" >
+
+           <TextView
+               android:id="@+id/status"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="Status" />
+           
+            <TextView
+               android:id="@+id/gpsLock"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="Gps Lock" />
+           
+           <CheckBox
+               android:id="@+id/gpsLock"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right" > 
+           </CheckBox>
+
+            <TextView
+               android:id="@+id/hasilSurvey"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="Hasil Survey" />
+           
+           <CheckBox
+               android:id="@+id/hasilSurvey"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right" > 
+           </CheckBox>
+           
+             <TextView
+               android:id="@+id/koneksiData"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="Koneksi Data" />
+           
+           <CheckBox
+               android:id="@+id/koneksiData"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right" > 
+           </CheckBox>
+    
+             <TextView
+               android:id="@+id/dataTerupload"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="Data Ter-upload" />
+           
+           <CheckBox
+               android:id="@+id/dataTeruload"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right" > 
+           </CheckBox>
+           
+     <TextView
+               android:id="@+id/daftarHasilSurvey"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="Daftar Hasil Survey" />  
+               
+     <TextView
+               android:id="@+id/NomSurvey"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="Nom Survey" />
+     
+      <CheckBox
+               android:id="@+id/nomSurvey"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right" > 
+           </CheckBox>
+     
+      <TextView
+               android:id="@+id/Kandidat1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="Kandidat1" />
+       <TextView
+               android:id="@+id/Kandidat2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="Kandidat2" />
+        
+        <TextView
+               android:id="@+id/legend"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="Legend" />
+     <TextView
+               android:id="@+id/posisiAnda"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="posisiAnda" />
+     <TextView
+               android:id="@+id/nom"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="NOM" />
+       <TextView
+               android:id="@+id/kandidat"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="Kandidat 1/2/3" />
+       <Button
+           android:id="@+id/ambilSurvey"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right" 
+           android:text="Ambil Survey">
+       </Button>
+       
+             <Button
+           android:id="@+id/cekKoneksi"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right" 
+           android:text="Cek Koneksi">
+       </Button>
+       
+               <Button
+           android:id="@+id/uploadALlData"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right" 
+           android:text="Upload Data">
+       </Button>
+</LinearLayout>
+</RelativeLayout>

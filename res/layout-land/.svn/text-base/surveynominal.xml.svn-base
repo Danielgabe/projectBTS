@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <TextView
+        android:id="@+id/siteID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Site ID" />
+    
+    <EditText 
+        android:id="@id/siteID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Site Name" /> 
+        
+     <EditText 
+        android:id="@+id/siteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />
+    
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latitude" /> 
+      <EditText 
+        android:id="@id/latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />    
+    
+       <TextView
+        android:id="@+id/longtitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Longitude" /> 
+        
+      <EditText 
+        android:id="@id/longtitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />  
+         
+       <TextView
+        android:id="@+id/province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Province" /> 
+        
+       <EditText 
+        android:id="@id/province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />  
+       
+       <TextView
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City" /> 
+        <EditText 
+        android:id="@id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />  
+        <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+       			android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/head_default" />
+        
+        <TextView
+        android:id="@+id/posisiAnda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Posisi Anda" /> 
+        
+         <TextView
+        android:id="@+id/latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latitude" /> 
+        <EditText 
+        android:id="@id/latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />  
+        
+         <TextView
+        android:id="@+id/longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City" /> 
+        
+        <EditText 
+        android:id="@id/longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        />  
+      <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status" />  
+         <CheckBox
+               android:id="@+id/status"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" > 
+           </CheckBox>
+           
+        <TextView
+        android:id="@+id/gpsLock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GPS Lock" /> 
+        <CheckBox
+               android:id="@+id/gpsLock"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"  > 
+           </CheckBox>
+           
+     <TextView
+        android:id="@+id/instruksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instruksi" />    
+        
+     <TextView
+        android:id="@+id/tes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Ambil photo panorama dari keadaan sekeliling Site. Note : Pastikan hasil photo memperlihatkan keadaan sekeliling dengan kondisi cahaya yang baik" />        
+        
+       <Button
+           android:id="@+id/ambilPanoramic"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right" 
+           android:text="Ambil Panoramic">
+       </Button> 
+       
+           
+     <TextView
+        android:id="@+id/tes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "Ambil photo dari akses PLN. Note : Akses bla bla" /> 
+        
+       <Button
+           android:id="@+id/ambilGambar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right" 
+           android:text="Ambil Gambar">
+       </Button> 
+     
+       <TextView
+        android:id="@+id/tes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "Ambil photo dari PLN bla bal"/>
+       	
+        <Button
+           android:id="@+id/ambilGambar1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right" 
+           android:text="Ambil Gambar">
+       </Button> 
+       
+        <TextView
+        android:id="@+id/tes1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "Ambil photo dari jalur PLN bla bla bla"/>
+       	
+        <Button
+           android:id="@+id/ambilGambar2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right" 
+           android:text="Ambil Gambar">
+       </Button> 
+        
+        
+        <TextView
+        android:id="@+id/tes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "Lengkapi data survey"/>
+       	
+        <Button
+           android:id="@+id/isiCeklist"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right" 
+           android:text="Isi CheckList">
+       </Button> 
+       
+    </LinearLayout>
+    
+
+</ScrollView>

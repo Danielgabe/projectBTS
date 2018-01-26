@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.nichtemna.takeandsavephoto"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk
+            android:minSdkVersion="14"
+            android:targetSdkVersion="18"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name="com.nichtemna.takeandsavephoto.fungsi.Splash"
+                android:label="@string/app_name"     
+                 android:noHistory="true"           
+                android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.nichtemna.takeandsavephoto.fungsi.LoginActivity" 
+            android:screenOrientation="landscape" 
+            android:launchMode="singleTop"
+            android:noHistory="true"  
+            android:label="LoginActivity"  >
+        </activity>
+        
+        <activity 
+            android:name="com.nichtemna.takeandsavephoto.fungsi.LogOutActivity"
+            android:screenOrientation="landscape"
+            android:label="LogOutActivity"
+            android:launchMode="singleTop"
+            android:noHistory="true"    >
+        </activity>
+        
+        <activity 
+            android:name="com.nichtemna.takeandsavephoto.activity.SlidingActivity"
+            android:screenOrientation="landscape"
+            android:label="SlidingActivity">
+            
+        </activity>   
+        
+       <activity 
+           android:name="com.nichtemna.takeandsavephoto.activity.jobList"
+           android:screenOrientation="landscape" 
+           android:label="jobList"> 
+       </activity>
+       
+       <activity 
+           android:name="com.nichtemna.takeandsavephoto.activity.TugasSelesai"
+           android:screenOrientation="landscape" 
+           android:label="TugasSelesai"> 
+       </activity>
+       
+       <activity 
+           android:name="com.nichtemna.takeandsavephoto.fragment.TugasSaya"
+           android:screenOrientation="landscape" 
+            android:noHistory="true"
+           android:label="Tugas Saya">
+           
+       </activity>   
+       
+       <activity 
+           android:name="com.nichtemna.takeandsavephoto.fragment.LihatMap"
+           android:label="FragmentUnattendanceRequest" 
+           android:screenOrientation="landscape"  >
+       </activity>
+       
+       <activity 
+           android:name="com.nichtemna.takeandsavephoto.fragment.DaftarNom" 
+           
+           android:label="DaftarNom">
+           
+       </activity>
+       
+       <activity 
+           android:name="com.nichtemna.takeandsavephoto.PhotoActivity"
+           android:label="PhoneActivity"
+           android:screenOrientation="portrait">
+            </activity>
+            
+            <activity 
+                android:name="com.nichtemna.takeandsavephoto.UploadPhotos"
+                android:label="UploadPhotos" >
+            </activity>
+            
+            <activity 
+                android:name="com.nichtemna.takeandsavephoto.CameraFragment"
+                android:label="UploadPhotos"
+                  >
+            </activity>
+             
+            <activity 
+                android:name="com.nichtemna.takeandsavephoto.fragment.AmbilSurvey"
+                android:label="AmbilSurvey" >
+            </activity>
+            
+            <activity 
+                android:name="com.nichtemna.takeandsavephoto.mapsoffline.AndroidOpenStreetMapViewActivity"
+                android:screenOrientation="landscape"
+                android:label="AndroidOpenStreetMapViewActivity" >
+            </activity>
+            
+              <activity
+                  android:name="com.nichtemna.takeandsavephoto.fragment.LihatPeta" 
+                  android:label="LihatPeta" >
+            </activity>
+            
+              <activity
+                  android:name="com.nichtemna.takeandsavephoto.fragment.CheckList" 
+                  android:label="CheckList" >
+            </activity>
+            
+                 <activity
+                  android:name="com.nichtemna.takeandsavephoto.fragment.Obstacle" 
+                  android:label="Obstacle" >
+            </activity>
+            
+                  <activity
+                  android:name="com.nichtemna.takeandsavephoto.fragment.FolderDone" 
+                  android:label="FolderDone" >
+            </activity>
+    </application>
+
+</manifest>

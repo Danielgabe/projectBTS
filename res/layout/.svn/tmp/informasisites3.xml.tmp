@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+          
+        <RelativeLayout
+            android:id="@+id/bodyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" 
+            >
+            
+            <org.osmdroid.views.MapView
+                android:id="@+id/openmapview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"      
+                android:layout_toLeftOf="@+id/tableLayoutButton" />
+            
+            <LinearLayout
+                android:id="@+id/tableLayoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+                
+                <ScrollView 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    
+                   <TableLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent" >
+	                
+	                <TableRow
+	                    android:id="@+id/tableRow6"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" >
+                       <TextView
+                    android:id="@+id/siteID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#3f76f5"
+                    android:text="SITE ID" />
+                       
+                       <TextView
+                    android:id="@+id/showSiteID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" />
+                    </TableRow>
+                    
+	                
+	                <TableRow
+	                    android:id="@+id/tableRow6"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" >
+                       
+                       <TextView
+                    android:id="@+id/siteName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SITE NAME" 
+                   android:textColor="#3f76f5"
+                    android:layout_marginRight="10dp" />
+                    	<TextView
+                    android:id="@+id/showSiteName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" />
+	                </TableRow>
+                    
+	                <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" > 
+                 <TextView
+                    android:id="@+id/Province"
+        			android:text="PROVINSI" 
+                    android:textColor="#3f76f5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    />
+                 <TextView
+			        android:id="@+id/showProvince"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="5dp"  />
+	                </TableRow>
+	          <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  >
+
+                <TextView
+                    android:id="@+id/City"
+        			android:text="KOTA"  
+        			android:textColor="#3f76f5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    />
+                
+			    <TextView
+			        android:id="@+id/showCity"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" 
+			        android:layout_marginLeft="5dp"
+			        />  
+            </TableRow>       
+	                
+	          <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  > 
+	          <TextView
+                    android:id="@+id/Latitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="LATITUDE"
+                    android:textColor="#3f76f5" />
+
+                <TextView
+                    android:id="@+id/showLatitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"  
+                    android:layout_marginLeft="5dp"/> 
+                </TableRow>
+                
+                
+	          <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  >
+	             <TextView
+                    android:id="@+id/Longitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_marginRight="10dp"
+                    android:text="LONGITUDE"
+                    android:textColor="#3f76f5" />
+
+                <TextView
+                    android:id="@+id/showLongitude"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"  
+			        android:layout_marginLeft="5dp" />
+	          </TableRow>
+	          
+	          
+	           <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  >
+	           <TextView
+                    android:id="@+id/txtGpsLock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:text="GPS ON"
+                    android:textColor="#3f76f5" /> 
+                
+                <ImageView 
+             android:id="@+id/gpsLock"             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"  
+             android:layout_marginLeft="5dp"             
+             />
+	          </TableRow>
+	          
+	           <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                
+                		<TextView
+                    android:id="@+id/Koneksi_Data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"  
+                    android:textColor="#3f76f5"
+                    android:text="KONEKSI DATA"  />
+                		
+                		<ImageView
+         		android:layout_width="wrap_content"
+             	android:layout_height="wrap_content" 
+             	android:id="@+id/checkKoneksi"
+             	android:layout_marginLeft="5dp" />               
+            			</TableRow>
+            			
+	                <TableLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent" >
+	                
+	                 <TableRow
+	                    android:id="@+id/tableRow6"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" >
+	                	<Button
+	                    	android:id="@+id/surveynom"
+	                   		android:layout_width="wrap_content"
+	                    	android:layout_height="wrap_content"
+	                    	android:text="Kandidat 1" />
+	                	<ImageView
+	          				android:layout_width="wrap_content"
+	            			android:layout_height="wrap_content" 
+	             			android:id="@+id/imgSurveyNom"
+	             			android:layout_marginLeft="5dp"/>
+					</TableRow>
+					
+					<TableRow
+	                    android:id="@+id/tableRow7"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" >
+	                	<Button
+	                    	android:id="@+id/ambilCandidate1"
+	                   		android:layout_width="wrap_content"
+	                    	android:layout_height="wrap_content"
+	                    	android:text="Kandidat 2" />
+	                	<ImageView
+	          				android:layout_width="wrap_content"
+	            			android:layout_height="wrap_content" 
+	             			android:id="@+id/imgUpCandidate1"
+	             			android:layout_marginLeft="5dp"/>
+	                </TableRow>
+	                 
+	                	<TableRow
+	                	    android:id="@+id/tableRow8"
+	                	    android:layout_width="wrap_content"
+	                	    android:layout_height="wrap_content" >
+
+	                	    <Button
+	                	        android:id="@+id/ambilCandidate2"
+	                	        android:layout_width="wrap_content"
+	                	        android:layout_height="wrap_content"
+	                	        android:text="Kandidat 3" />
+
+	                	    <ImageView
+	                	        android:id="@+id/imgUpCandidate2"
+	                	        android:layout_width="wrap_content"
+	                	        android:layout_height="wrap_content"
+	                	        android:layout_marginLeft="5dp" />
+	                	</TableRow>	       
+	                	         
+	                <TableRow
+	                    android:id="@+id/tableRow9"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" >
+	                	<Button
+	                    	android:id="@+id/uploadData"
+	                   		android:layout_width="wrap_content"
+	                    	android:layout_height="wrap_content"
+	                    	android:text="Upload Data" />
+	                	<ImageView
+	          				android:layout_width="wrap_content"
+	            			android:layout_height="wrap_content" 
+	             			android:id="@+id/imgUploadData"
+	             			android:layout_marginLeft="5dp"/>
+	                </TableRow> 
+	                
+	                
+	                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    <TextView 
+                        android:id="@+id/posisiAnda"	                        
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+                  		android:textStyle="bold"
+                        android:text="POSISI ANDA"/>
+                    <ImageView 
+                        android:id="@+id/myLocation_icon"
+                        android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:src="@drawable/my_icon_legend"
+	                    android:layout_marginRight="5dp"/>
+                    </TableRow>
+                    
+	                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" > 
+                    <TextView 
+                        android:id="@+id/posisiNomPosisi"	                        
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+                    	android:textStyle="bold"
+                        android:text="NOM"/>
+                    <ImageView 
+                        android:id="@+id/nom_icon"
+                        android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:src="@drawable/nom_icon_legend"
+	                    android:layout_marginRight="5dp"/>
+                    </TableRow>
+                    
+	                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >  
+                    <TextView 
+                        android:id="@+id/posisiKandidat"	                        
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+                    	android:textStyle="bold"
+                        android:text="KANDIDAT 1/2"/>
+                    <ImageView 
+                        android:id="@+id/candidate_icon"
+                        android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:src="@drawable/candidate_icon_legend"
+	                    android:layout_marginRight="5dp"/>
+
+                </TableRow> 
+	                 
+	                </TableLayout>
+	                </TableLayout>	                
+	                </ScrollView>
+            </LinearLayout>
+            
+           
+            
+            
+    </RelativeLayout>
+    </RelativeLayout>

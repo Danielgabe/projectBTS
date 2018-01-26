@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:alpha="0.5"
+        android:background="#ff000000"
+        android:padding="5dip" >
+
+        <ImageButton
+            android:id="@+id/frag_cam_imb_take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_main_selector"
+            android:padding="5dip"
+            android:src="@drawable/camera" />
+
+        <ImageButton
+            android:id="@+id/frag_cam_imb_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_main_selector"
+            android:padding="5dip"
+            android:src="@drawable/gallery" />
+
+        <!-- <ImageButton
+            android:id="@+id/frag_cam_imb_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/frag_cam_imb_photo"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_main_selector"
+            android:padding="5dip"
+            android:src="@drawable/ic_launcher" /> -->
+    
+        </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/camera_preview"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"  >
+
+         
+
+    <FrameLayout
+        android:id="@+id/frag_cam_frame_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp" > 
+        
+          
+       
+        <SurfaceView
+            android:id="@+id/frag_cam_surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" /> 
+      	
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageViewCompass"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/kompas" />
+    <TextView
+             android:id="@+id/tvHeading"
+             android:layout_width="120dp"
+             android:layout_height="match_parent"
+             android:rotation="90" 
+             android:text="Heading: 0.0"
+             android:textColor="#000000"
+             android:textSize="17dp"
+             android:textStyle="bold" />
+     
+ </RelativeLayout>
+</RelativeLayout>

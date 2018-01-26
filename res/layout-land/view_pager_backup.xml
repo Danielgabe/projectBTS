@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#b8b8b8"
+        android:gravity="left"
+        android:padding="5dip" >
+
+        <Button
+            android:id="@+id/showLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/menu"/>
+  
+        <Button
+            android:id="@+id/showRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/refresh"/>
+        
+ 		<Button
+             android:id="@+id/showSearch"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" 
+             android:layout_alignParentRight="true" 
+             android:layout_marginRight="50dp"
+             android:background="@drawable/search" />
+
+         <TextView
+             android:id="@+id/profil"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/showLeft"
+             android:layout_alignBottom="@+id/showLeft"
+             android:layout_toRightOf="@+id/showLeft"
+             android:gravity="center"
+             android:text="Daftar NOM"
+             android:textStyle="bold" />
+        
+    </RelativeLayout>
+
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/head_layout"
+    android:fadingEdge="vertical|horizontal"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="horizontal|vertical" >
+
+	<LinearLayout
+	    android:id="@+id/child"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+	<TableLayout
+    android:id="@+id/simple_table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0,1,2,3,4,5,6" >
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  >
+
+        <TextView
+            android:id="@+id/textView1c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Select"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Site Name"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView3c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="Site ID"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView4c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Province"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView5c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="City"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView6c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Latitude"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView7c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Longitude"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </TableRow>
+
+</TableLayout>
+    </LinearLayout> 
+</ScrollView>
+
+<LinearLayout 
+    android:id="@+id/bottom_layout"    
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/scrollView"    
+    android:gravity="right"
+    android:padding="5dip"
+    >
+    <Button
+        android:id="@+id/lihatMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Lihat di Map" />
+  <Button
+      android:id="@+id/tambahTugas"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"      
+      android:gravity="center"
+      android:text="Tambahkan Ke Tugas Saya" />
+   
+</LinearLayout>
+<android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottom_layout">
+ 
+    </android.support.v4.view.ViewPager>
+ 
+       
+
+</RelativeLayout>

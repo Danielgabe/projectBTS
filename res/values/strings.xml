@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">P I M</string>
+    <string name="gallery">Gallery</string>
+    <string name="take_photo">Take photo</string>
+    <string name="camera">Camera</string>
+    <string name="remove">Remove</string>
+      <string name="close">Close</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="camera_alert">Device has only one camera!</string>
+<string name="no_photos">No photos in this folder</string>
+<string name="A1">A1</string>
+<string name="A2">A2</string>
+<string name="A3">A3</string>
+<string name="A4">A4</string>
+<string name="A5">A5</string>
+<string name="A6">A6</string>
+<string name="A7">A7</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Unattendance" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+   
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:text="Start Date : " />
+
+            <EditText
+                android:id="@+id/txtStartdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:singleLine="true" />
+            
+            <Button
+                android:id="@+id/setStartDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dip"
+                android:text="Set Start Date" /> 
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:text="End Date" />
+
+            <EditText
+                android:id="@+id/txtEnddate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/setEndDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dip"
+                android:text="Set End Date" /> 
+                
+       <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnSubmit" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:text="submit" />
+            <!--
+        <Button
+            android:id="@+id/btnApprove"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Approve" />
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reject" />
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" />
+            -->
+        
+    </LinearLayout>
+
+</RelativeLayout>

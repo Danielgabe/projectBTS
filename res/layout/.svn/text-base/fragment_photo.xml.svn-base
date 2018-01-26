@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/frag_photo_tv_nophotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_photos"/>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.5"
+            android:background="#00000000"
+            android:padding="5dip">
+
+        <ImageButton
+                android:id="@+id/frag_photo_imb_remove_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_main_selector"
+                android:padding="5dip"
+                android:src="@drawable/ic_remove"
+                android:visibility="invisible"/>
+
+        <ImageButton
+                android:id="@+id/frag_photo_imb_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_main_selector"
+                android:padding="5dip"
+                android:src="@drawable/nextpic"/>
+    </RelativeLayout>
+
+</RelativeLayout>

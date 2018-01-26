@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+ 
+    
+  <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Name Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/txtDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:editable="false"
+            android:singleLine="true" />
+
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Request Unit" /> 
+     <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />    
+  
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Overtime Date" />
+
+        <EditText
+            android:id="@+id/txtOvertimeDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:editable="false"
+            android:singleLine="true" />  
+            
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Request Begin" />
+
+        <EditText
+            android:id="@+id/txtRequestBegin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:editable="false"
+            android:singleLine="true" /> 
+
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Request End" />
+
+        <EditText
+            android:id="@+id/txtRequestEnd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:editable="false"
+            android:singleLine="true" />     
+            
+        
+          <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Approval Level" />
+
+        <EditText
+            android:id="@+id/txtApprovalLevel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:editable="false"
+            android:singleLine="true" />   
+            
+  
+   <CheckBox
+             android:id="@+id/checkBox"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Approved" />
+          
+        
+    </LinearLayout>
+  
+</ScrollView> 

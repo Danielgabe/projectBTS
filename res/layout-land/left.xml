@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mlist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color_deep" > 
+    
+        
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_deep"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip" >
+
+             
+
+            <TextView
+                android:id="@+id/name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/head_view"
+                android:text="John Doe"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/grade_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_textview"
+                android:layout_below="@+id/name_textview"
+                android:text="Kontraktor A"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            layout="@layout/line" >
+        </include> 
+         
+   <TextView
+            android:id="@+id/daftarNom" 
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Daftar NOM"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:onClick="clickHandler" />
+ 
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            layout="@layout/line" >
+        </include>
+
+        <TextView
+            android:id="@+id/tugasS" 
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Tugas Saya"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:onClick="clickHandler" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            layout="@layout/line" >
+        </include>
+  
+          <TextView
+            android:id="@+id/folderDone" 
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Tugas Selesai"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:onClick="clickHandler" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            layout="@layout/line" >
+        </include>
+
+         <TextView
+            android:id="@+id/showLogout" 
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Logout"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:onClick="clickHandler" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            layout="@layout/line" >
+        </include>
+         
+    </LinearLayout>
+
+</ScrollView>

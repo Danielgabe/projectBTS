@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#0066FF</color>
+    <color name="no_color">#00000000</color>
+    <color name="bg_color">#F4F3F3</color>
+    <color name="bg_color_deep">#E5E5E5</color>
+    <color name="orange">#f9d80d </color>
+    <color name="black">#000000</color>
+    <color name="text_color">#434343</color>
+    <color name="row_genap">#C4C4C4</color>
+    <color name="row_ganjil">#F2F2F2</color>
+    <color name="black_half">#50000000</color>
+    <color name="red">#FF0000</color>
+    <color name="gradient_start_gray">#4c4c4c</color>
+    <color name="gradient_end_gray">#333333</color>
+    
+    <color name="kuning">#f9d80d </color>
+    <color name="biru_muda">#6aa2ed</color>
+    <color name="biru_tua">#1b0f4d</color>
+    
+
+</resources>

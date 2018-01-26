@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fadingEdge="vertical|horizontal"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="horizontal|vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/siteID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Site ID :" />
+
+                <TextView
+                    android:id="@+id/showSiteID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/Latitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Latitude :" />
+
+                <TextView
+                    android:id="@+id/showLatitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtGpsLock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Gps Lock :" />
+                
+                <ImageView 
+             android:id="@+id/gpsLock"             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"             
+             />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/siteName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Site Name :"
+                    android:layout_marginRight="10dp" />
+                
+                <TextView
+                    android:id="@+id/showSiteName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/Longitude"
+        			android:text="Longitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:id="@+id/showLongitude"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/Koneksi_Data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Koneksi_Data" 
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp" />
+                 <ImageView
+         	android:layout_width="wrap_content"
+             android:layout_height="wrap_content" 
+             android:id="@+id/checkKoneksi"
+             android:layout_marginLeft="5dp"
+             />               
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/Province"
+        			android:text="Province"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    />
+                
+                <TextView
+			        android:id="@+id/showProvince"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="5dp"  />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/City"
+        			android:text="City"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    />
+                
+			    <TextView
+			        android:id="@+id/showCity"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" 
+			        android:layout_marginRight="5dp"
+			        /> 
+			 
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/bodyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tableLayout"
+            android:orientation="horizontal" >
+
+            <org.osmdroid.views.MapView
+                android:id="@+id/openmapview"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.76" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+                 <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                	<Button
+                	    android:id="@+id/ambilPanoramic"
+                	    android:layout_width="100dp"
+                	    android:layout_height="wrap_content"
+                	    android:layout_marginLeft="5dp"
+                	    android:text="Ambil Panoramic" />
+  
+         				<ImageView
+         android:id="@+id/imageChecklist1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/checklist" />
+     
+     <ImageView
+         android:id="@+id/imageCross1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/cross" />
+                		
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                	<Button
+                	    android:id="@+id/aksesPln"
+                	    android:layout_width="50dp"
+                	    android:layout_height="wrap_content"
+                	    android:layout_marginLeft="5dp"
+                	    android:text="Ambil Akses Pole PLN" />
+                	
+                	<ImageView
+         android:id="@+id/imageChecklist2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/checklist" />
+
+     <ImageView
+         android:id="@+id/imageCross2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/cross" />
+                	
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                	<Button
+                	    android:id="@+id/polePln"
+                	    android:layout_width="50dp"
+                	    android:layout_height="wrap_content"
+                	    android:layout_marginLeft="5dp"
+                	    android:text="Ambil Pole PLN" />
+				         
+                	 <ImageView
+         android:id="@+id/imageChecklist3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/checklist" />
+     
+     <ImageView
+         android:id="@+id/imageCross3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/cross" />
+     	
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                	<Button
+                	    android:id="@+id/jalurKabelPln"
+                	    android:layout_width="50dp"
+                	    android:layout_height="wrap_content"
+                	    android:layout_marginLeft="5dp"
+                	    android:text="Ambil Jalur Kabel PLN" />
+				    
+                	<ImageView
+         android:id="@+id/imageChecklist4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/checklist" />
+     
+     <ImageView
+         android:id="@+id/imageCross4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/cross" />	
+                </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/BottoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/bodyLayout"
+            android:orientation="horizontal" 
+            android:layout_marginTop="15dp">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    <TextView 
+                        android:id="@+id/curentPosisition"	                        
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+                        android:text="Posisi Anda :"/>"
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+                    <TextView 
+                        android:id="@+id/currentLong"	                        
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+                        android:text="Longitude :"/>
+                     <TextView 
+                        android:id="@+id/showCurrentLong"	                        
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+                        android:text=""/>
+                    <TextView 
+                        android:id="@+id/currentLat"	                        
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+                        android:text="Latitidue :"/>
+                    <TextView 
+                        android:id="@+id/showcurrentLat"	                        
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+                        android:text=""/>
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/simpanLanjutkan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="Simpan dan "  />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    
+</ScrollView>
